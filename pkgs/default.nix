@@ -6937,10 +6937,11 @@ inherit (pkgs) mesa;};
          , network-transport, network-transport-tcp, optparse-applicative
          , parsec, plutus-prototype, pvss, QuickCheck, random, reflection
          , resourcet, rocksdb-haskell-ng, safe-exceptions, safecopy
-         , serokell-util, servant, servant-server, servant-swagger, stdenv
-         , stm, systemd, tagged, template-haskell, text, text-format, time
-         , time-units, transformers, transformers-base, universum, unix
-         , unliftio, unordered-containers, vector, wai, warp, warp-tls, yaml
+         , serokell-util, servant, servant-client, servant-client-core
+         , servant-server, servant-swagger, stdenv, stm, systemd, tagged
+         , template-haskell, text, text-format, time, time-units
+         , transformers, transformers-base, universum, unix, unliftio
+         , unordered-containers, vector, wai, warp, warp-tls, yaml
          }:
          mkDerivation {
            pname = "cardano-sl";
